@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+.header_div{
+    
+}
+
+.outer_div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+.inner_div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.button_holder{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.show_button{
+    color:white;
+    width: 90%;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 19px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: aquamarine;
+}
+
+.show_button:hover{
+    background-color: #e63946;
+}
+
+
+
+
