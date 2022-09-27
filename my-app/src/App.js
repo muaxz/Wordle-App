@@ -5,7 +5,7 @@ import Square from "./components/square";
 function App() {
 
    const [squareList,setSquareList] = useState([])
- 
+   const wordList = useRef(["which","there","their","about"])
 
    useEffect(()=>{
       const List = [...squareList]
