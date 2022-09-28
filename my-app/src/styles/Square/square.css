@@ -15,4 +15,45 @@
   border: none;
   outline: none;
   border-radius: 10px;
+}
+
+@-webkit-keyframes squareAnimation {
+  0% {
+    padding: 0px;
+  }
+  50% {
+    padding: 10px;
+  }
+  100% {
+    padding: 0px;
+  }
+}
+
+@keyframes squareAnimation {
+  0% {
+    padding: 0px;
+  }
+  50% {
+    padding: 10px;
+  }
+  100% {
+    padding: 0px;
+  }
+}
+.square_input.green {
+  -webkit-animation-name: squareAnimation;
+          animation-name: squareAnimation;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  background-color: lightgreen;
+  color: white;
+}
+
+.square_input.yellow {
+  -webkit-animation-name: squareAnimation;
+          animation-name: squareAnimation;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  background-color: yellow;
+  color: white;
 }/*# sourceMappingURL=square.css.map */
