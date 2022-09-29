@@ -146,7 +146,7 @@ function App() {
         {isWin === "win" && <InfoWindow closeWindowHandler={()=>setIsWin("")}>You Prediction is correct,<br></br>Congratulations!</InfoWindow>}
         {isWin === "lose" && <InfoWindow closeWindowHandler={()=>setIsWin("")}>The word was "{wordList.current[randomNumber.current]}"<br></br><br></br>:(</InfoWindow>}
         <div className="outer_div">
-           <h1 style={{zIndex:"20",paddingBottom:"20px"}}>WORDLE</h1>
+           <h1 style={{zIndex:"20"}}>WORDLE</h1>
            {!wordExist ? <p style={{textAlign:"center"}}>NOT IN THE WORD LIST</p> : ""}
            <div className="inner_div">
                 {squareList.map((item,index)=>{
