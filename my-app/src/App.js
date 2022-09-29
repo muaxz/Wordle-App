@@ -43,7 +43,7 @@ function App() {
       }  
 
    },[squareList])
- 
+   console.log(wordList.current[randomNumber.current])
    
    const onChangeHandler=(e,index)=>{
       
@@ -63,7 +63,7 @@ function App() {
    const handleValidationProcess=()=>{
       
          const selectedMessage = wordList.current[randomNumber.current];
-         console.log(selectedMessage)
+         
          const squareListCopy = [...squareList]
          var equalityCounter = 0;
          var doesWordExist = false;
@@ -107,7 +107,7 @@ function App() {
 
         
          for (let i = 0; i < selectedMessage.length; i++){
-             console.log(letterCheckCounter)
+            
              var letterCheckCounter = 0;
              for (let j = 0; j < message.length; j++) {
                 //console.log(selectedMessage[i]+": "+i)
@@ -124,8 +124,6 @@ function App() {
 
                   letterCheckCounter++
 
-                }else{
-                     squareListCopy[(currentRow-4)+i].colorType = "GREEN"
                 }
                 
                 if(letterCheckCounter === 5){
@@ -145,10 +143,10 @@ function App() {
 
    return (
     <div className="header_div">
-         <h1>WORDLE</h1>
-        {isWin === "win" && <InfoWindow>You Prediction is correct,<br></br>Congratulations!</InfoWindow>}
-        {isWin === "lose" && <InfoWindow>The word was "{wordList.current[randomNumber.current]}"<br></br><br></br>:(</InfoWindow>}
+        {isWin === "win" && <InfoWindow closeWindowHandler={()=>setIsWin("")}>You Prediction is correct,<br></br>Congratulations!</InfoWindow>}
+        {isWin === "lose" && <InfoWindow closeWindowHandler={()=>setIsWin("")}>The word was "{wordList.current[randomNumber.current]}"<br></br><br></br>:(</InfoWindow>}
         <div className="outer_div">
+           <h1 style={{zIndex:"20"}}>WORDLE</h1>
            {!wordExist ? <p style={{textAlign:"center"}}>NOT IN THE WORD LIST</p> : ""}
            <div className="inner_div">
                 {squareList.map((item,index)=>{
