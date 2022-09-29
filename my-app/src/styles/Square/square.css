@@ -56,4 +56,22 @@
           animation-duration: 200ms;
   background-color: yellow;
   color: white;
+}
+
+.square_input.black {
+  -webkit-animation-name: squareAnimation;
+          animation-name: squareAnimation;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  background-color: #031c36;
+  color: white;
+}
+
+.square_input.red {
+  -webkit-animation-name: squareAnimation;
+          animation-name: squareAnimation;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  background-color: red;
+  color: white;
 }/*# sourceMappingURL=square.css.map */

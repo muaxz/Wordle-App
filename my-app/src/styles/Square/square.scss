@@ -40,3 +40,12 @@
     @include validationAnimation(white,yellow);
 }
 
+.square_input.black{
+    @include validationAnimation(white,#031c36);
+}
+
+.square_input.red{
+    @include validationAnimation(white,red);
+}
+
+
