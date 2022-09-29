@@ -1,5 +1,11 @@
 @import "./variables.scss";
 
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Anek Malayalam', sans-serif;
+}
+
 .header_div{
     text-align: center;
 }
@@ -31,13 +37,13 @@
     width: 90%;
     font-weight: bold;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 7px;
     font-size: 19px;
     transition-duration: 500ms;
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: aquamarine;
+    background-color: #ff595e;
 }
 
 .show_button:hover{
